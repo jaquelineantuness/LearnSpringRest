@@ -1,9 +1,11 @@
-package com.algoworks.algafood.algafood.service;
+package com.algoworks.algafood.service;
 
 
-import com.algoworks.algafood.algafood.modelo.Cliente;
-import com.algoworks.algafood.algafood.notificacao.NotificacaoEmail;
+import com.algoworks.algafood.modelo.Cliente;
+import com.algoworks.algafood.notificacao.NotificacaoEmail;
+import org.springframework.stereotype.Component;
 
+@Component
 public class AtivacaoClienteService {
 
     private NotificacaoEmail notificador;

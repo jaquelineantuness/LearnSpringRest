@@ -1,9 +1,10 @@
-package com.algoworks.algafood.algafood.notificacao;
+package com.algoworks.algafood.notificacao;
 
 
-import com.algoworks.algafood.algafood.modelo.Cliente;
+import com.algoworks.algafood.modelo.Cliente;
 import org.springframework.stereotype.Component;
 
+//@Component inicia o Bin, vai aparecer ao subir a aplicação
 @Component
 public class NotificacaoEmail {
 

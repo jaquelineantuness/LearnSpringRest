@@ -1,4 +1,4 @@
-package com.algoworks.algafood.algafood;
+package com.algoworks.algafood;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
