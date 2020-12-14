@@ -1,6 +1,7 @@
 package com.algoworks.algafood;
 
 import com.algoworks.algafood.notificacao.NotificacaoEmail;
+import com.algoworks.algafood.service.AtivacaoClienteService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -14,5 +15,9 @@ public class AlgaConfig {
 
         return notificador;
     }
-
+    
+    @Bean
+    public AtivacaoClienteService ativacaoClienteService(){
+        return  new AtivacaoClienteService(notificacaoEmail());//já tras um bean gerenciado pelo spring quando chamo notificacaoEmail()
+    }
 }
