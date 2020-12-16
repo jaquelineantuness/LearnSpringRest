@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class AtivacaoClienteService {
 
+    @Autowired
     private Notificador notificador;
 
     //@Autowired para demonstrar qual contrutor o Spring irá usar ao instanciar.(quando existe apenas 1 construtor não é necessário)
@@ -25,8 +26,8 @@ public class AtivacaoClienteService {
     }
 
     //@Autowired é o ponto de injeção
-    @Autowired
-    public void setNotificador(Notificador notificador) {
-        this.notificador = notificador;
-    }
+//    @Autowired
+//    public void setNotificador(Notificador notificador) {
+//        this.notificador = notificador;
+//    }
 }
