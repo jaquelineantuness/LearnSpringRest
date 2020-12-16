@@ -6,7 +6,7 @@ import com.algoworks.algafood.notificacao.Notificador;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-//@Component
+@Component
 public class AtivacaoClienteService {
 
     @Autowired(required = false)
