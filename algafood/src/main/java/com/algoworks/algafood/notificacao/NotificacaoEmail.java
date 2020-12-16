@@ -10,7 +10,7 @@ public class NotificacaoEmail implements Notificador {
     @Override
     public void notificar(Cliente cliente, String mensagem){
 
-        System.out.printf("Noficando %s através do email %s usando SMTP %s: %s\n"
+        System.out.printf("Noficando %s através do email %s usando SMTP : %s\n"
                 , cliente.getNome()
                 , cliente.getEmail()
                 , mensagem);
