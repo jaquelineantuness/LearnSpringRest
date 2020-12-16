@@ -12,11 +12,11 @@ public class AtivacaoClienteService {
     private Notificador notificador;
 
     //@Autowired para demonstrar qual contrutor o Spring irá usar ao instanciar.(quando existe apenas 1 construtor não é necessário)
-    @Autowired
-    public AtivacaoClienteService(Notificador notificador) {
-        this.notificador = notificador;
-
-    }
+//    @Autowired
+//    public AtivacaoClienteService(Notificador notificador) {
+//        this.notificador = notificador;
+//
+//    }
 
     public void ativar(Cliente cliente){
         cliente.ativar();
@@ -25,8 +25,8 @@ public class AtivacaoClienteService {
     }
 
     //@Autowired é o ponto de injeção
-//    @Autowired
-//    public void setNotificador(Notificador notificador) {
-//        this.notificador = notificador;
-//    }
+    @Autowired
+    public void setNotificador(Notificador notificador) {
+        this.notificador = notificador;
+    }
 }
