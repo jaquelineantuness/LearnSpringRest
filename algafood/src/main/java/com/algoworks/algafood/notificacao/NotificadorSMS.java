@@ -5,14 +5,14 @@ import com.algoworks.algafood.modelo.Cliente;
 import org.springframework.stereotype.Component;
 
 @Component
-public class NotificacaoEmail implements Notificador {
+public class NotificadorSMS implements Notificador {
 
     @Override
     public void notificar(Cliente cliente, String mensagem){
 
-        System.out.printf("Noficando %s através do email %s : %s\n"
+        System.out.printf("Noficando %s através do SMS do telefone %s : %s\n"
                 , cliente.getNome()
-                , cliente.getEmail()
+                , cliente.getTelefone()
                 , mensagem);
     }
 
