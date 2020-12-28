@@ -2,7 +2,9 @@ package com.algoworks.algafood.service;
 
 
 import com.algoworks.algafood.modelo.Cliente;
+import com.algoworks.algafood.notificacao.NivelUrgencia;
 import com.algoworks.algafood.notificacao.Notificador;
+import com.algoworks.algafood.notificacao.TipoDoNotificador;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
@@ -10,7 +12,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class AtivacaoClienteService {
 
-    @Qualifier("urgente")
+    @TipoDoNotificador(NivelUrgencia.NORMAL)
     @Autowired
     private Notificador notificador;
 
