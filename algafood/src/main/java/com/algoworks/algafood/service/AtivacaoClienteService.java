@@ -6,24 +6,19 @@ import com.algoworks.algafood.notificacao.NivelUrgencia;
 import com.algoworks.algafood.notificacao.Notificador;
 import com.algoworks.algafood.notificacao.TipoDoNotificador;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Component;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
-
-@Component
+//@Component
 public class AtivacaoClienteService {
 
     @TipoDoNotificador(NivelUrgencia.NORMAL)
     @Autowired
     private Notificador notificador;
 
-    @PostConstruct
-    public void unit(){
+    //@PostConstruct
+    public void init(){
         System.out.println("INIT "+ notificador);
     }
-    @PreDestroy
+    //@PreDestroy
     public void destroy(){
         System.out.println("destroy");
     }
